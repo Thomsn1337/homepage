@@ -71,10 +71,11 @@ a {
 .portrait-image .name {
     position: absolute;
     bottom: 2rem;
-    left: 2rem;
     color: var(--color-background);
     font-size: 3.5rem;
+    text-align: center;
     text-shadow: 2px 2px 4px var(--color-text);
+    width: 100%;
 }
 
 .about-text h1 {
@@ -185,40 +186,11 @@ footer {
     gap: 1rem;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-    main {
-        padding-inline: 4rem;
-    }
-
-    .about-card {
-        display: inline-block;
-    }
-
-    .portrait-image {
-        width: 35vw;
-        float: left;
-        margin: 0 1rem 0rem 0;
-    }
-
-    .portrait-image .name {
-        top: 1rem;
-        right: -27rem;
-        left: unset;
-        bottom: unset;
-        font-size: 3rem;
-        width: 15ch;
-    }
-
-    .about-text {
-        background: var(--color-background);
-        box-shadow: 1px 1px 4px black;
-        margin: 6rem 0 0 4rem;
-        padding: 2rem;
-    }
-
+@media screen and (min-width: 700px) {
     .about-text h1 {
         text-align: left;
     }
+
 
     .about-text .buttons {
         justify-content: flex-end;
@@ -236,7 +208,7 @@ footer {
     }
 
     .contact {
-        padding: 2rem 0 2rem 4rem;
+        padding: 2rem 0 2rem 12rem;
     }
 
     .contact h2 {
@@ -244,8 +216,47 @@ footer {
     }
 
     footer img {
-        width: 50vw;
         object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    main {
+        padding-inline: 4rem;
+    }
+
+    .about-card {
+        display: inline-block;
+    }
+
+    .portrait-image {
+        width: clamp(250px, 35vw, 300px);
+        float: left;
+        margin: 0 1rem 0rem 0;
+    }
+
+    .portrait-image .name {
+        top: 1rem;
+        right: -22rem;
+        left: unset;
+        bottom: unset;
+        font-size: 3rem;
+        width: 12ch;
+    }
+
+    .about-text {
+        background: var(--color-background);
+        box-shadow: 1px 1px 4px black;
+        margin: 6rem 0 0 4rem;
+        padding: 2rem;
+    }
+
+    .contact {
+        padding: 2rem 0 2rem 4rem;
+    }
+
+    footer img {
+        width: 50vw;
     }
 }
 
@@ -275,5 +286,10 @@ footer {
 
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    footer img {
+        width: 30vw;
+        max-height: 310px;
     }
 }
