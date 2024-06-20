@@ -185,3 +185,39 @@ footer {
     align-items: center;
     gap: 1rem;
 }
+
+@media screen and (min-width: 500px) {
+    .about-card {
+        display: inline-block;
+    }
+
+    .portrait-image {
+        width: 35vw;
+        float: left;
+        margin: 0 1rem 0rem 0;
+    }
+
+    .portrait-image .name {
+        top: 1rem;
+        right: -27rem;
+        left: unset;
+        bottom: unset;
+        font-size: 3rem;
+        width: 15ch;
+    }
+
+    .about-text {
+        background: var(--color-background);
+        box-shadow: 1px 1px 4px black;
+        margin: 6rem 0 0 4rem;
+        padding: 2rem;
+    }
+
+    .about-text h1 {
+        text-align: left;
+    }
+
+    .about-text .buttons {
+        justify-content: flex-end;
+    }
+}
