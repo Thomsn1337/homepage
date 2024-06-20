@@ -6,6 +6,7 @@
     --color-text: #343b58;
     --color-links: #565a6e;
     --color-accent: #34548a;
+    --color-placeholder: #8c4351;
 
     font-family: "Lato", sans-serif;
 
@@ -25,7 +26,12 @@ body {
     color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-headings);
 }
 
@@ -77,8 +83,60 @@ a {
 }
 
 .about-text .buttons {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 0 2rem;
+}
+
+.my-work {
+    margin-top: 4rem;
+}
+
+.my-work h2 {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    box-shadow: 1px 1px 4px var(--color-headings);
+}
+
+.card img {
+    background: var(--color-placeholder);
+    color: var(--color-background);
+    font-size: 1.3rem;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-description {
+    padding: 1rem 1.5rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-title h3, .card-title a {
+    font-size: 1.4rem;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 1rem;
 }
