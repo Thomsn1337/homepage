@@ -152,7 +152,6 @@ a {
 footer {
     background: var(--color-accent);
     color: var(--color-text-dark-bg);
-    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -227,5 +226,25 @@ footer {
 
     .my-work h2 {
         text-align: left;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .contact {
+        padding: 2rem 0 2rem 4rem;
+    }
+
+    .contact h2 {
+        text-align: left;
+    }
+
+    footer img {
+        width: 50vw;
+        object-fit: cover;
     }
 }
