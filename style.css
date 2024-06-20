@@ -107,7 +107,7 @@ a {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -152,7 +152,6 @@ a {
 footer {
     background: var(--color-accent);
     color: var(--color-text-dark-bg);
-    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -184,4 +183,68 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        padding-inline: 4rem;
+    }
+
+    .about-card {
+        display: inline-block;
+    }
+
+    .portrait-image {
+        width: 35vw;
+        float: left;
+        margin: 0 1rem 0rem 0;
+    }
+
+    .portrait-image .name {
+        top: 1rem;
+        right: -27rem;
+        left: unset;
+        bottom: unset;
+        font-size: 3rem;
+        width: 15ch;
+    }
+
+    .about-text {
+        background: var(--color-background);
+        box-shadow: 1px 1px 4px black;
+        margin: 6rem 0 0 4rem;
+        padding: 2rem;
+    }
+
+    .about-text h1 {
+        text-align: left;
+    }
+
+    .about-text .buttons {
+        justify-content: flex-end;
+    }
+
+    .my-work h2 {
+        text-align: left;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .contact {
+        padding: 2rem 0 2rem 4rem;
+    }
+
+    .contact h2 {
+        text-align: left;
+    }
+
+    footer img {
+        width: 50vw;
+        object-fit: cover;
+    }
 }
