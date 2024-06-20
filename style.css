@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+    --color-background: #d5d6db;
+    --color-headings: #0f0f14;
+    --color-text: #343b58;
+    --color-links: #565a6e;
+    --color-accent: #34548a;
+
+    font-family: "Lato", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-headings);
+}
+
+a {
+    color: var(--color-links);
+    text-decoration: none;
+}
+
+.about .background {
+    background: var(--color-accent);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portrait-image {
+    position: relative;
+    box-shadow: 1px 1px 4px var(--color-headings);
+}
+
+.portrait-image .name {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--color-background);
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px var(--color-text);
+}
+
+.about-text h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+}
+
+.about-text .buttons {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+}
