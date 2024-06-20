@@ -4,6 +4,7 @@
     --color-background: #d5d6db;
     --color-headings: #0f0f14;
     --color-text: #343b58;
+    --color-text-dark-bg: #d5d6db;
     --color-links: #565a6e;
     --color-accent: #34548a;
     --color-placeholder: #8c4351;
@@ -20,10 +21,15 @@ img {
 }
 
 body {
-    padding-inline: 2rem;
-    padding-top: 2rem;
+    padding: 0;
+    margin: 0;
     background: var(--color-background);
     color: var(--color-text);
+}
+
+main {
+    padding-inline: 2rem;
+    padding-top: 2rem;
 }
 
 h1,
@@ -91,6 +97,7 @@ a {
 
 .my-work {
     margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 
 .my-work h2 {
@@ -132,11 +139,49 @@ a {
     margin: 0;
 }
 
-.card-title h3, .card-title a {
+.card-title h3,
+.card-title a {
     font-size: 1.4rem;
 }
 
 .card-buttons {
     display: flex;
+    gap: 1rem;
+}
+
+footer {
+    background: var(--color-accent);
+    color: var(--color-text-dark-bg);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact {
+    padding-inline: 2rem;
+}
+
+.contact h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-text-dark-bg);
+}
+
+.contact p  {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
