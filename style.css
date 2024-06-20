@@ -107,7 +107,7 @@ a {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -187,6 +187,10 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
+    main {
+        padding-inline: 4rem;
+    }
+
     .about-card {
         display: inline-block;
     }
@@ -219,5 +223,9 @@ footer {
 
     .about-text .buttons {
         justify-content: flex-end;
+    }
+
+    .my-work h2 {
+        text-align: left;
     }
 }
