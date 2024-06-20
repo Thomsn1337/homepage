@@ -185,7 +185,7 @@ footer {
     gap: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
     main {
         padding-inline: 4rem;
     }
@@ -246,5 +246,30 @@ footer {
     footer img {
         width: 50vw;
         object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding-inline: 12rem;
+    }
+    .about-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .portrait-image {
+        min-width: 350px;
+    }
+
+    .about-text {
+        background: var(--color-background);
+        padding: 2rem;
+        box-shadow: 1px 1px 4px var(--color-headings);
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
     }
 }
