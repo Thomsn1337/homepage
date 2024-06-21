@@ -7,5 +7,6 @@ design.
 
 ## Links
 
+- [Preview](https://thomsn1337.github.io/homepage/)
 - [Assignment page](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage)
 - [About Odin](https://www.theodinproject.com/about)
